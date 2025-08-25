@@ -20,7 +20,7 @@ This setup gives you a lightweight, portable Kali desktop environment you can ac
 Clone the repository and build the Docker image:
 
 ```bash
-git clone https://github.com/MohammadKobirShah/docker-kali-linux-desktop.git
+git clone https://github.com/YOUR_USERNAME/docker-kali-linux-desktop.git
 cd docker-kali-linux-desktop
 
 docker build -t kali-xfce-vnc .
@@ -55,8 +55,9 @@ docker run -it -p 5901:5901 -p 6080:6080 --name kali-desktop kali-xfce-vnc
 ## 📂 File Layout
 ```
 .
-├── Dockerfile   # Docker build recipe
-└── README.md    # Documentation (this file)
+├── Dockerfile      # Docker build recipe
+├── README.md       # Documentation (this file)
+└── screenshot.png  # Example screenshot of Kali desktop
 ```
 
 ---
@@ -75,7 +76,12 @@ If you plan to expose it to the internet/cloud:
 ---
 
 ## 🐉 Example Screenshot
-Once running, you’ll see a full **Kali XFCE desktop** themed environment (with dark menus, dragon icons, and Firefox preinstalled) directly in your browser.
+
+Here’s what your Kali desktop will look like once it’s up and running via noVNC:
+
+![Kali XFCE Desktop Screenshot](screenshot.png)
+
+> ✨ This is a demo XFCE session with the official Kali theme and Firefox ESR.  
 
 ---
 
@@ -89,3 +95,4 @@ Once running, you’ll see a full **Kali XFCE desktop** themed environment (with
 ## 📜 License
 This project is provided under the **MIT License**.  
 Kali Linux is a trademark of **Offensive Security** – this repo is just a Dockerized environment for convenience.
+
