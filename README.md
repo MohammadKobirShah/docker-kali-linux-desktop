@@ -77,12 +77,10 @@ If you plan to expose it to the internet/cloud:
 
 ## 🐉 Example Screenshot
 
-Here’s what your Kali desktop will look like once it’s up and running via noVNC:
-
-![Kali XFCE Desktop Screenshot](screenshot.png)
-
-> ✨ This is a demo XFCE session with the official Kali theme and Firefox ESR.  
-
+<p align="center">
+  <img src="screenshot.png" alt="Kali XFCE Desktop" width="800"/><br/>
+  <em>✨This is the Kali XFCE desktop running inside the Docker container via noVNC.</em>
+</p>
 ---
 
 ## 🛠️ Troubleshooting
