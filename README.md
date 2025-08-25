@@ -20,7 +20,7 @@ This setup gives you a lightweight, portable Kali desktop environment you can ac
 Clone the repository and build the Docker image:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/docker-kali-linux-desktop.git
+git clone https://github.com/MohammadKobirShah/docker-kali-linux-desktop.git
 cd docker-kali-linux-desktop
 
 docker build -t kali-xfce-vnc .
