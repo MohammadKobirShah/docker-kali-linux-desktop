@@ -8,7 +8,6 @@ SHELL ["/bin/bash", "-c"]
 RUN apt update -y && apt install -y --no-install-recommends \
     kali-desktop-xfce \
     kali-themes \
-    kali-wallpapers \
     tigervnc-standalone-server \
     novnc websockify \
     firefox-esr \
@@ -25,9 +24,11 @@ RUN touch /root/.Xauthority
 EXPOSE 5901
 EXPOSE 6080
 
+
 # Launch VNC server + self-signed cert + noVNC + keep alive
 CMD bash -c '\
     vncserver -localhost no -SecurityTypes None -geometry 1280x800 --I-KNOW-THIS-IS-INSECURE && \
     openssl req -new -subj "/C=JP" -x509 -days 365 -nodes -out self.pem -keyout self.pem && \
     websockify -D --web=/usr/share/novnc/ --cert=self.pem 6080 localhost:5901 && \
     tail -f /dev/null'
+    
